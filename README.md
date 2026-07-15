@@ -119,37 +119,16 @@ Created an interactive two-page dashboard featuring:
 
 ---
 
-## 📁 Repository Structure
-
-```text
-📂 Data
-    └── data_science_salary.csv
-
-📂 SQL
-    ├── create_table.sql
-    └── salary_analysis.sql
-
-📂 Power BI
-    └── Data Science Salary Analytics.pbix
-
-📂 Images
-    ├── Executive Dashboard.png
-    └── Employee & Market Insights.png
-
-README.md
-```
-
----
-
 ## 📊 Dashboard Preview
 
 ### Executive Dashboard
 
-*(Insert screenshot here)*
+<img width="1372" height="777" alt="image" src="https://github.com/user-attachments/assets/15f60459-13f0-4946-a865-03da48cd883e" />
 
 ### Employee & Market Insights Dashboard
 
-*(Insert screenshot here)*
+<img width="1373" height="765" alt="image" src="https://github.com/user-attachments/assets/19b33d8e-2e95-4372-bd02-951aaa55df3e" />
+
 
 ---
 
