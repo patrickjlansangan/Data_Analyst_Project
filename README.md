@@ -1,56 +1,199 @@
-# Data_Analyst_Project
-Power BI &amp; SQL pipeline for predicting market moves and optimizing inventory levels. Excel to clean data for easy analyzation 
+# 📊 Data Science Salary Analytics Dashboard
 
-# Market Forecasting & Inventory Optimization Analysis
+## 📌 Overview
 
-## Executive Summary
-This project delivers a data-driven approach to predicting market shifts and optimizing inventory levels. By combining historical sales data with market trend indicators, this analysis helps businesses prevent costly stockouts, reduce excess inventory carrying costs, and align purchasing cycles with projected market moves.
+The **Data Science Salary Analytics Dashboard** is an end-to-end data analytics project that explores global salary trends in the data science industry. This project demonstrates the complete analytics workflow—from data cleaning and SQL analysis to interactive dashboard development in Power BI.
 
-### Key Business Questions Addressed:
-1. When will demand peak or drop based on upcoming market moves?
-2. What are the optimal safety stock and reorder points for key products?
-3. How can we minimize holding costs without sacrificing customer fulfillment rates?
+The objective of this project is to transform raw salary data into meaningful business insights that help understand salary distribution, workforce trends, company characteristics, and remote work patterns.
 
 ---
 
-## Technical Skills & Workflow
+## 🎯 Project Objectives
 
-### 1. Data Cleaning & Preparation (Excel)
-*   Audited raw inventory logs, supply chain timelines, and historical sales data.
-*   Standardized product SKUs, resolved missing delivery dates, and formatted timestamps.
-*   Conducted initial data profiling to identify seasonal anomalies and extreme outliers.
-
-### 2. Data Modeling & Advanced Querying (SQL)
-*   Engineered relational tables to track stock levels, supplier lead times, and market demand.
-*   Utilized **Window Functions** (`LEAD`, `LAG`, `AVG OVER`) to calculate rolling demand and historical market velocity.
-*   Built **CTEs** and complex **JOINs** to calculate critical inventory metrics:
-    *   *Reorder Point (ROP) = (Daily Average Sales × Lead Time) + Safety Stock*
-    *   *Economic Order Quantity (EOQ)* to balance ordering and holding costs.
-
-### 3. Predictive Dashboarding (Power BI)
-*   Established a robust **Star Schema** data model linking inventory, sales, and calendar dimensions.
-*   Authored advanced **DAX Measures** for predictive moving averages, time-intelligence forecasting, and safety stock alerts.
-*   Designed an interactive executive dashboard featuring automated dynamic alerts for understocking and overstocking risks.
+- Analyze global salary trends in the data science industry.
+- Identify the highest-paying countries and job roles.
+- Explore salary differences by experience level.
+- Examine company size and employment type distribution.
+- Analyze remote work adoption across employee locations.
+- Build interactive dashboards to support data-driven decision-making.
 
 ---
 
-## Key Insights & Business Impact
-*   **Market Prediction:** Identified a consistent 3-week lead time between specific market economic indicators and sharp demand spikes in core product lines.
-*   **Inventory Optimization:** Discovered that 25% of warehouse capacity was tied up in slow-moving inventory, while top-selling items faced a 12% stockout rate.
-*   **Financial Impact:** Implementing the calculated SQL reorder points reduces safety stock holding costs by an estimated 18% while maintaining a 98% service level.
+## 🛠️ Tools & Technologies
+
+- Microsoft Excel
+- SQL (MySQL)
+- Power BI
+- DAX
+- Power Query
+- GitHub
 
 ---
 
-## Repository Structure
+## 📂 Dataset
+
+- **Source:** Kaggle
+- **Dataset:** Data Science Salaries (2020–2022)
+
+The dataset contains information about:
+
+- Work Year
+- Experience Level
+- Employment Type
+- Job Title
+- Salary
+- Salary Currency
+- Salary in USD
+- Employee Residence
+- Remote Ratio
+- Company Location
+- Company Size
+
+---
+
+## 🔄 Project Workflow
+
+### 1. Data Cleaning (Excel)
+
+- Checked for duplicate records.
+- Standardized country names.
+- Standardized company locations.
+- Converted data into consistent formats.
+- Verified missing values and data quality.
+
+---
+
+### 2. Data Analysis (SQL)
+
+Performed SQL analysis to answer business questions such as:
+
+- Average salary
+- Highest-paying countries
+- Highest-paying job roles
+- Most in-demand jobs
+- Salary by experience level
+- Company size distribution
+- Employment type distribution
+- Remote work distribution
+- Employee residence distribution
+
+---
+
+### 3. Dashboard Development (Power BI)
+
+Created an interactive two-page dashboard featuring:
+
+### Executive Dashboard
+
+- Average Salary
+- Total Employees
+- Total Countries
+- Top Paying Country
+- Top In-Demand Job
+- Highest Paying Countries
+- Highest Paying Jobs
+- Salary by Experience Level
+- Company Size Distribution
+- Remote Work Distribution
+
+### Employee & Market Insights
+
+- Employee Residence Distribution
+- Average Salary by Employee Residence
+- Average Salary by Employment Type
+- Average Salary by Company Size
+- Total Employees by Experience Level
+- Employment Type Distribution
+- Remote Work by Employee Residence
+
+---
+
+## 📈 Key Insights
+
+- Russia recorded the highest average salary among all company locations.
+- Data Scientist was identified as the most in-demand job role.
+- Executive-level professionals received the highest average salaries.
+- Medium-sized companies employed the largest number of professionals.
+- Most employees worked in fully remote roles.
+- The United States had the highest number of employees represented in the dataset.
+
+---
+
+## 📁 Repository Structure
+
 ```text
-├── Data/                 # Cleaned data files and dictionary (simulated)
-├── Queries/              # SQL scripts for ROP, EOQ, and trend calculations
-├── Dashboards/           # Power BI (.pbix) file and dashboard screenshots
-└── README.md             # Project documentation
+📂 Data
+    └── data_science_salary.csv
+
+📂 SQL
+    ├── create_table.sql
+    └── salary_analysis.sql
+
+📂 Power BI
+    └── Data Science Salary Analytics.pbix
+
+📂 Images
+    ├── Executive Dashboard.png
+    └── Employee & Market Insights.png
+
+README.md
 ```
 
 ---
 
-## How to Interact With This Project
-1. Navigate to the `/Queries` folder to view the exact logic used for the inventory metrics.
-2. Download the `.pbix` file from the `/Dashboards` folder to test the interactive forecasting slicers.
+## 📊 Dashboard Preview
+
+### Executive Dashboard
+
+*(Insert screenshot here)*
+
+### Employee & Market Insights Dashboard
+
+*(Insert screenshot here)*
+
+---
+
+## 💡 Skills Demonstrated
+
+- Data Cleaning
+- Data Transformation
+- SQL Querying
+- Data Analysis
+- Business Intelligence
+- Data Visualization
+- Dashboard Development
+- KPI Design
+- DAX Calculations
+- Power BI
+- Excel
+- MySQL
+
+---
+
+## 📌 Learning Outcomes
+
+Through this project, I strengthened my skills in:
+
+- Cleaning and preparing real-world datasets.
+- Writing SQL queries for business analysis.
+- Designing interactive Power BI dashboards.
+- Creating DAX measures and KPIs.
+- Transforming data into meaningful business insights.
+- Communicating findings through visual storytelling.
+
+---
+
+## 👨‍💻 Author
+
+**Patrick John M. Lansangan**
+
+Bachelor of Science in Information Technology
+
+Aspiring Data Analyst
+
+- LinkedIn: https://www.linkedin.com/in/pjlansangan/
+- GitHub: https://github.com/patrickjlansangan
+
+---
+
+⭐ If you found this project interesting, feel free to explore the repository and connect with me on LinkedIn.
