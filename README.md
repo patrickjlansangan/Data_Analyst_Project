@@ -1,4 +1,4 @@
-# 📊 Data Science Salary Analytics Dashboard
+#  Data Science Salary Analytics Dashboard
 
 ## 📌 Overview
 
